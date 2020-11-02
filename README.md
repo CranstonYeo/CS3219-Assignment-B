@@ -5,18 +5,18 @@
 ### Required Applications
 * [NodeJs](https://nodejs.org/en/download/)
 * [MongoDb](https://www.mongodb.com/try/download/community)
-* [PostMan](https://www.postman.com/).
+* [PostMan](https://www.postman.com/)
 
 ### Instructions to run the API locally
-1. Clone the code from [github repository](https://github.com/CranstonYeo/CS3219-Assignment-B.git)
+1. Clone the code from [github repository](https://github.com/CranstonYeo/CS3219-Assignment-B.git).
 
-1. After cloning the code, change directory to the application folder by **cd CS3219-Assignment-B** from the project root directory.
+1. After cloning, change directory to the application folder by **cd CS3219-Assignment-B**.
 
-1. Then, you are required to install the relevant node modules via command prompt using **npm install** and **npm install -g nodemon**.
+1. Install the relevant node modules via command prompt using **npm install** and **npm install -g nodemon**.
 
-1. You could run the Mongodb database by **nodemon index**.
+1. Run the Mongodb database by **nodemon index**.
 
-1. Afterwards, access PostMan to interact with the database.
+1. Afterwards, use PostMan to interact with the database.
 
 1. In PostMan, interact with the database via the following url:
 
@@ -44,7 +44,7 @@
 
      1. Press the **Send** button.
 
-- http://localhost:8080/api/contacts/{input the contact id here}
+- http://localhost:8080/api/contacts/{contact_id}
 
   1. Get the details of the individual contact:
 
@@ -68,7 +68,7 @@
         | gender | value |
 
      1. Press the **Send** button.
-     1. The contact is updated with the values you have key.
+     1. The contact is updated with the values you keyed in.
 
   1. Delete the individual contact from the database:
      1. Input the url address.
@@ -100,7 +100,7 @@
 
 1. Afterward, ensure there is a **.travis.yml** file uploaded at the root directory.
 
-1. If not create a new **.travis.yml** with the following details and push it to the root directory:
+1. If not create a new **.travis.yml** with the following code and push it to the root directory:
 
    ```language: node_js
 
