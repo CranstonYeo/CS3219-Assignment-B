@@ -106,9 +106,7 @@
 
    node_js:
       - lts/*
-
    services: mongodb
-
    install:
       - npm install
 
