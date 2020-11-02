@@ -7,7 +7,7 @@
 * [MongoDb](https://www.mongodb.com/try/download/community)
 * [PostMan](https://www.postman.com/)
 
-### Instructions to run the API locally
+### Instructions to run the API locally and access the deployed API:
 1. Clone the code from [github repository](https://github.com/CranstonYeo/CS3219-Assignment-B.git).
 
 1. After cloning, change directory to the application folder by **cd CS3219-Assignment-B**.
@@ -117,3 +117,16 @@
    dist: trusty
 
 1. Push a new change to github and travis will run the test cases automatically.
+
+## Task B3: Use CD tool for automated deployment to a serverless service.
+
+### Instructions:
+1. Communicate with the deployed API in AWS lambda via PostMan.
+
+1. The instructions to communicate with AWS lambda via Postman are the same as [Task B1](#Task-B1:-Implement-a-simple-Javascript-backend-and-REST-API-to-GET,-POST,-PUT,-DELETE).
+
+1. Instead of using localhost as the url address, you are required to use the following:
+
+- https://1m1p4vj02c.execute-api.ap-southeast-1.amazonaws.com/dev/api/contacts instead of http://localhost:8080/api/contacts.
+
+- https://1m1p4vj02c.execute-api.ap-southeast-1.amazonaws.com/dev/api/contacts/{contact_id} instead of http://localhost:8080/api/contacts/{contact_id}.

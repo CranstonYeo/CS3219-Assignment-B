@@ -1,8 +1,8 @@
 {
-  "name": "myapp",
+  "name": "application",
   "version": "1.0.0",
   "description": "CS3219 OTOT Assignment Task B",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha --timeout 10000 --exit"
   },
@@ -14,9 +14,24 @@
     "chai-http": "^4.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "mongoose": "^5.10.8"
+    "helmet": "^4.2.0",
+    "mongoose": "^5.10.11",
+    "serverless-http": "^2.6.0"
   },
   "devDependencies": {
-    "mocha": "^8.2.0"
-  }
+    "mocha": "^8.2.0",
+    "serverless-offline": "^6.8.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CranstonYeo/CS3219-Assignment-B.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/CranstonYeo/CS3219-Assignment-B/issues"
+  },
+  "homepage": "https://github.com/CranstonYeo/CS3219-Assignment-B#readme"
 }
