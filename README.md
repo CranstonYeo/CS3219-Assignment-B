@@ -117,6 +117,3 @@
    dist: trusty
 
 1. Push a new change to github and travis will run the test cases automatically.
-
-
-
