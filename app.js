@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 // Connect to Mongoose and set connection variable
-mongoose.connect('mongodb+srv://Brokenpalewing99:Brokenpalewing99@cluster0.tmckv.mongodb.net/CS3219-OTOT-ASSIGNMENT?retryWrites=true&w=majority', { useNewUrlParser: true});
+mongoose.connect('mongodb+srv://Brokenpalewing99:Brokenpalewing99@cluster0.tmckv.mongodb.net/CS3219-OTOT-ASSIGNMENT?retryWrites=true&w=majority', { useUnifiedTopology: true, useNewUrlParser: true});
 var db = mongoose.connection;
 
 // Added check for DB connection
@@ -42,3 +42,5 @@ app.use(cors())
 app.listen(port, function () {
     console.log("Running RestHub on port " + port);
 });
+
+module.exports = app;
