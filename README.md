@@ -103,17 +103,18 @@
 1. If not create a new **.travis.yml** with the following code and push it to the root directory:
 
    ```language: node_js
-
    node_js:
-      - lts/*
-   services: mongodb
-   install:
-      - npm install
-
+   - "12.8"
+   services:
+   - mongodb
+   cache:
+   directories:
+      - node_modules
+   before_script:
+   - npm install
    script:
-      - npm run test
-
-   cache: npm
+   - npm run test
+   dist: trusty
 
 1. Push a new change to github and travis will run the test cases automatically.
 

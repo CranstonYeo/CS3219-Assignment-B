@@ -1,12 +1,13 @@
 language: node_js
-
 node_js:
-    - lts/*
-services: mongodb
-install:
-    - npm install
-
+  - "12.8"
+services:
+  - mongodb
+cache:
+  directories:
+    - node_modules
+before_script:
+  - npm install
 script:
-    - npm run test
-
-cache: npm
+  - npm run test
+dist: trusty
