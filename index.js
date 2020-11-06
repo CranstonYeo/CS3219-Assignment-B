@@ -57,9 +57,6 @@ app.get("/", (req, res) =>
 // Use Api routes in the App
 app.use('/api', apiRoutes);
 
-//Enable all CORS request
-app.use(cors())
-
 // Launch app to listen to specified port
 app.listen(port, function () {
     console.log("Running RestHub on port " + port);

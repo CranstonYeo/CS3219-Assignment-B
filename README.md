@@ -14,7 +14,7 @@
 
 1. Install the relevant node modules via command prompt using **npm install** and **npm install -g nodemon**.
 
-1. Run the Mongodb database by **nodemon index**.
+1. Run the Mongodb database by typing **nodemon index** into the command prompt.
 
 1. Afterwards, use PostMan to interact with the database.
 
@@ -130,3 +130,43 @@
 - https://1m1p4vj02c.execute-api.ap-southeast-1.amazonaws.com/dev/api/contacts instead of http://localhost:8080/api/contacts.
 
 - https://1m1p4vj02c.execute-api.ap-southeast-1.amazonaws.com/dev/api/contacts/{contact_id} instead of http://localhost:8080/api/contacts/{contact_id}.
+
+## Task B4: Build a frontend SPA using Vue or any other framework.
+
+### Instructions
+
+1. Run the command **nodemon index** in the project root directory to start the backend.
+
+1. 2. Open a new command terminal and change directory to the frontend folder by **cd frontend** from the project root directory.
+
+1. Next, run **npm install** to install the necessary components.
+
+1. Afterwards, run **npm run serve** to start the website.
+
+1. Access the website from any web browser using the url http://localhost:8081/.
+
+1. You can interact with the API via the website:
+
+   1. Get all contacts:
+
+      1. Upon loading the web page, all contacts will automatically be fetched from the backend and be displayed in the table "List of Contacts".
+
+   1. Create new contact:
+
+      1. Fill in the name, email, phone and gender.
+      1. Press the **Submit** button.
+      1. The list of contacts should be automatically updated in the table.
+
+   1. Update contact:
+
+      1. Find the contact you want to update in the list of contacts table.
+      1. Click the **Update** button beside the contact under actions.
+      1. Fill in the data you want to replace for the contact.
+      1. Press the **Update** button.
+      1. The list of contacts should be updated.
+
+   1. Delete contact:
+
+      1. Find the contact you want to delete in the list of contacts table.
+      1. Click the **Delete** button beside the contact under actions.
+      1. The contact should be remove from the list of contacts.
